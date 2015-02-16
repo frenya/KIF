@@ -96,7 +96,6 @@
 		EABD46C51857A0F300A5F081 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB60ECC4177F8C83005A041A /* CoreGraphics.framework */; };
 		EABD46C71857A0F300A5F081 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = EB60ECF2177F8DB3005A041A /* InfoPlist.strings */; };
 		EABD46CF1857A15400A5F081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AB1857A0EB00A5F081 /* XCTest.framework */; };
-		EABD46D21857A24E00A5F081 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AB1857A0EB00A5F081 /* XCTest.framework */; };
 		EABD46D51857C54500A5F081 /* KIF-XCTestPrefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = EABD46D31857BE8600A5F081 /* KIF-XCTestPrefix.pch */; };
 		EABD46D61858C8ED00A5F081 /* libKIF.a in Frameworks */ = {isa = PBXBuildFile; fileRef = EABD46AA1857A0C700A5F081 /* libKIF.a */; };
 		EABD474B185F509E00A5F081 /* SenTestCase-KIFAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = EABD4749185F509E00A5F081 /* SenTestCase-KIFAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -323,7 +322,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EABD46D21857A24E00A5F081 /* XCTest.framework in Frameworks */,
 				EABD468E1857A0C700A5F081 /* Foundation.framework in Frameworks */,
 				EABD468F1857A0C700A5F081 /* UIKit.framework in Frameworks */,
 			);
@@ -1139,6 +1137,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1159,6 +1158,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -1179,6 +1179,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(SDKROOT)/Developer/Library/Frameworks",
 				);
 				GCC_PREFIX_HEADER = "Classes/KIF-XCTestPrefix.pch";
 				OTHER_LDFLAGS = "-ObjC";
